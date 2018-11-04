@@ -1,5 +1,10 @@
 // FILE:  player.h
 // written by Roger Priebe
+
+/**************************
+// USED BY Jonathan Walsh and Rainey Shah
+**************************/
+
 // 1/22/08 (revised 9/2/08)
 // This class represents a player in a card game that takes "tricks"
 // The "Books" represent a container for holding tricks
@@ -15,11 +20,13 @@
 #include "card.h"
 using namespace std;
 
-//test
+
 class Player
 {
 public:
-    Player();
+    Player(){
+        myName = "";
+    }
 
     Player(string name) {
         myName = name;

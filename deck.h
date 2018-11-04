@@ -1,5 +1,10 @@
 // FILE: deck.h
 // written by Owen Astrachan and Roger Priebe
+
+/**************************
+// USED BY Jonathan Walsh and Rainey Shah
+**************************/
+
 // this class respresents a deck of cards
 // When a Deck is constructed, it contains 52 cards
 // in a "regular" order (aces, twos, threes, ... , kings)
