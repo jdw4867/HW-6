@@ -1,6 +1,11 @@
-//File Name: card.h
+// File Name: card.h
 //
 // Written by Owen Astrachan and Roger Priebe
+
+/**************************
+// USED BY Jonathan Walsh and Rainey Shah
+**************************/
+
 // This class represents a playing card, i.e., "ace of spades"
 // a Card is constructed from a rank (int in range 1..13)
 // and a suit (Card::spades, Card::hearts, Card::diamonds,
@@ -42,7 +47,6 @@ public:
     bool sameSuitAs(const Card& c) const;  // true if suit same as c
     int  getRank()                 const;  // return rank, 1..13
     string suitString(Suit s)      const;  // return "s", "h",...
-
     string rankString(int r)       const;  // return "A", "2", ..."Q"
 
 
@@ -53,9 +57,9 @@ public:
 
 private:
 
+
     int myRank;
     Suit mySuit;
-
 
 };
 

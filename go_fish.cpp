@@ -1,11 +1,31 @@
+//
+// Created by Jonathan Walsh and Rainey Shah
+// Created: 11/04/18
+// Latest Update: 11/04/18
+//
+
 #include <iostream>
+#include <cstdlib>
+#include "card.h"
+#include "player.h"
+#include "deck.h"
 
 using namespace std;
 
 int main() {
     cout << "Hello, World!" << endl;
+    Card s (10, Card::diamonds);
+    cout << s << endl;
+
     return 0;
 }
+
+
+
+
+
+
+
 
 
 /*
