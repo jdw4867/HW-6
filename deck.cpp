@@ -54,10 +54,8 @@ void Deck::shuffle() {
 
 Card Deck::dealCard() {
     if(myIndex < 52){
-        Card copyCard;
-        copyCard = myCards[myIndex];        //Copies card at myIndex value to be returned from function
         myIndex++;                          //moves myIndex value, so the next card dealt will be the card after
-        return copyCard;
+        return myCards[myIndex];
     } else {
         EXIT_SUCCESS;
     }

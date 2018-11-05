@@ -13,11 +13,27 @@
 using namespace std;
 
 int main() {
-    cout << "Hello, World!" << endl;
-    Card s (10, Card::diamonds);
-    cout << s << endl;
+    Deck deck;
+    deck.shuffle();
 
-    return 0;
+    Player p1 ("Rainey");
+    Player p2 ("Jonathan");
+    int twoPlayerTotalHandSize = 7;
+    for(int i = 0; i < twoPlayerTotalHandSize; i++) {           //deals 7 cards to each player (2-player game)
+        p1.addCard(deck.dealCard());
+        p2.addCard(deck.dealCard());
+    }
+
+    while(deck.size() != 0 && p1.getHandSize() != 0 && p2.getHandSize()){
+        Card c1;
+        Card c2;
+        while(p1.checkHandForBook(c1, c2)) p1.bookCards(c1, c2);
+        while(p2.checkHandForBook(c1, c2)) p2.bookCards(c1, c2);
+
+        c1 = p1.chooseCardFromHand();
+        cout << p1.getName() << "asks - Do you have a " << c1.getRank() << "?" << endl;
+        
+    }
 }
 
 

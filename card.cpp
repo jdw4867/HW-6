@@ -73,12 +73,12 @@ bool Card::sameSuitAs(const Card &c) const {
 }
 
 bool Card::operator==(const Card &rhs) const {
-    if(myRank != rhs.myRank) return true;           //in GoFish, only a matching rank is important
+    if(myRank == rhs.myRank) return true;           //in GoFish, only a matching rank is important
     else return false;                              //if I checked suit as well, no card would ever be equal to another
 }
 
 bool Card::operator!=(const Card &rhs) const {
-    if(myRank == rhs.myRank) return true;
+    if(myRank != rhs.myRank) return true;
     else return false;
 }
 
