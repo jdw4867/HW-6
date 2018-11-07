@@ -50,8 +50,9 @@ int main() {
                 successfulFish = true;
                 cout << p2.getName() << " says - Yes. I have a " << c1.rankString(c1.getRank()) << "." << endl;
                 p1.addCard(c1);
-                p2.removeCardFromHand(c1);
                 p1.bookCards(c1, c2);
+                p2.removeCardFromHand(c1);
+
                 cout << p1.getName() << " books his pair of " << c1.rankString(c1.getRank()) << "'s. (" << p1.getBookSize()/2 << ")" << endl;
                 cout << p1.getName() << "'s hand: " << p1.showHand() << endl << endl;
 
@@ -82,8 +83,8 @@ int main() {
                 successfulFish = true;
                 cout << p1.getName() << " says - Yes. I have a " << c1.rankString(c1.getRank()) << "." << endl;
                 p2.addCard(c1);
-                p1.removeCardFromHand(c1);
                 p2.bookCards(c1, c2);
+                p1.removeCardFromHand(c1);
                 cout << p2.getName() << " books his pair of " << c1.rankString(c1.getRank()) << "'s. (" << p2.getBookSize()/2 << ")" << endl;
                 cout << p2.getName() << "'s hand: " << p2.showHand() << endl << endl;
             } else {
