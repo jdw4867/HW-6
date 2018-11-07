@@ -68,7 +68,7 @@ string Card::toString() const {
 }
 
 bool Card::sameSuitAs(const Card &c) const {
-    if(c.mySuit == this->mySuit) return true;       //I don't think we'll ever use this function, but its here to create transferable code
+    if(c.mySuit == mySuit) return true;             //I don't think we'll ever use this function, but its here to create transferable code
     else return false;                              //for simulating multiple types of card games
 }
 
