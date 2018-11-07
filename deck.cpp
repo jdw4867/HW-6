@@ -54,8 +54,9 @@ void Deck::shuffle() {
 
 Card Deck::dealCard() {
     if(myIndex < 52){
+        int oldIndex = myIndex;
         myIndex++;                          //moves myIndex value, so the next card dealt will be the card after
-        return myCards[myIndex-1];
+        return myCards[oldIndex];
     } else {
         EXIT_SUCCESS;
     }

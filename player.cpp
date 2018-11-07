@@ -87,3 +87,11 @@ int Player::getHandSize() const{
 int Player::getBookSize() const{
     return myBook.size();
 }
+
+bool Player::rankInHand(Card c) const{
+    int size = getHandSize();
+    for(int i = 0; i < size; i++){
+        if (c == myHand[i]) return true;
+    }
+    return false;
+}

@@ -23,7 +23,7 @@ int Card::getRank() const {
 }
 
 string Card::suitString(Card::Suit s) const {
-    string convertedSuit;
+    string convertedSuit = "error";
     enum Suit {spades, hearts, diamonds, clubs};
     switch(s){
         case spades:
