@@ -1,8 +1,9 @@
 //
 // Created by Jonathan Walsh and Rainey Shah
 // Created: 11/04/18
-// Latest Update: 11/04/18
+// Latest Update: 11/08/18
 //
+//These functions describe player class methods
 
 #include "player.h"
 #include <ctime>
