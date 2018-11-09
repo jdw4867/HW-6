@@ -4,7 +4,7 @@
 // Latest Update: 11/08/18
 //
 //These functions describe player class methods
-
+#include <cstdlib>
 #include "player.h"
 #include <ctime>
 
